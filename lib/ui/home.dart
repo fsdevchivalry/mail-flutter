@@ -88,7 +88,7 @@ class _HomeScreenState extends State<HomeScreen> {
         SliverToBoxAdapter(
           child: Container(
             padding: EdgeInsets.all(12.0),
-            child: Text("All Inboxessssssss"),
+            child: Text("All Iboxes"),
           ),
         ),
       ],
