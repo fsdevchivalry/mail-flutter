@@ -56,10 +56,14 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ],
           ),
-          body: Column(children:[
-            Text("1", styel: TextStyel(colro: Colors.white)),
-            Text("1", styel: TextStyel(colro: Colors.white)),
-          ])
+          body: EmailView(
+            item: i,
+            favoriteChanged: () {
+              setState(() {
+                i.favorite = !i.favorite;
+              });
+            },
+          ),
         );
       },
       drawer: AppDrawer(),
@@ -84,7 +88,7 @@ class _HomeScreenState extends State<HomeScreen> {
         SliverToBoxAdapter(
           child: Container(
             padding: EdgeInsets.all(12.0),
-            child: Text("All Inboxes"),
+            child: Text("All Iboxes"),
           ),
         ),
       ],
