@@ -56,10 +56,14 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ],
           ),
-          body: Column(children:[
-            Text("1", styel: TextStyel(colro: Colors.white)),
-            Text("1", styel: TextStyel(colro: Colors.white)),
-          ])
+          body: EmailView(
+            item: i,
+            favoriteChanged: () {
+              setState(() {
+                i.favorite = !i.favorite;
+              });
+            },
+          ),
         );
       },
       drawer: AppDrawer(),
