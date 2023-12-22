@@ -82,7 +82,7 @@ class _HomeScreenState extends State<HomeScreen> {
             decoration: InputDecoration.collapsed(hintText: "Search mail"),
           ),
           trailing: CircleAvatar(
-            child: Text("RD"),
+            child: Text("RD & sign"),
           ),
         ),
         SliverToBoxAdapter(
